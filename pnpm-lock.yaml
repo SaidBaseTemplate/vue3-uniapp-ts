@@ -50,6 +50,18 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-4010520240507001
         version: 3.0.0-4010520240507001(postcss@8.4.39)(rollup@4.18.0)(vue@3.4.31(typescript@4.9.5))
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+      luch-request:
+        specifier: ^3.1.1
+        version: 3.1.1
+      pinia:
+        specifier: ^2.1.7
+        version: 2.1.7(typescript@4.9.5)(vue@3.4.31(typescript@4.9.5))
+      pinia-plugin-persist-uni:
+        specifier: ^1.3.1
+        version: 1.3.1(pinia@2.1.7(typescript@4.9.5)(vue@3.4.31(typescript@4.9.5)))(vue@3.4.31(typescript@4.9.5))
       vue:
         specifier: ^3.4.21
         version: 3.4.31(typescript@4.9.5)
@@ -78,6 +90,9 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4010520240507001
         version: 3.0.0-4010520240507001(postcss@8.4.39)(rollup@4.18.0)(vite@5.2.8(@types/node@20.14.9)(terser@5.31.1))(vue@3.4.31(typescript@4.9.5))
+      '@types/lodash':
+        specifier: ^4.17.6
+        version: 4.17.6
       '@vue/runtime-core':
         specifier: ^3.4.21
         version: 3.4.31
@@ -796,6 +811,9 @@ packages:
     resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
     engines: {node: '>=v18'}
 
+  '@dcloudio/types@2.6.12':
+    resolution: {integrity: sha512-mrCMwcINy1IFjU9VUqLeWBkj404yWs5paLDttBcA+eqUjanuUQbBcTVPqlrGgkyzLXDcV2oDDZRSNxNpXi4kMQ==}
+
   '@dcloudio/types@3.4.8':
     resolution: {integrity: sha512-IPXuoghLv7qNPOnRuP7vC5++MdRHhE0U7EMw9ia//uOh69fFXZiRTfoHd51+nzciD6R50gqYhbrCCZIxnxhM9Q==}
 
@@ -1475,6 +1493,9 @@ packages:
 
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
+
+  '@types/lodash@4.17.6':
+    resolution: {integrity: sha512-OpXEVoCKSS3lQqjx9GGGOapBeuW5eUboYHRlHP9urXPX25IKZ6AnP5ZRxtVf63iieUbsHxLn8NQ5Nlftc6yzAA==}
 
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
@@ -3196,6 +3217,9 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
+  luch-request@3.1.1:
+    resolution: {integrity: sha512-p7+mlcEtgRcd0OfXC4XZbyiwSr1XgCeqNT7LlVUjnk7InYl/8d5Rk7BUqAYNA2WRafI1wRIUQWRWZRpeUwWR0w==}
+
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
@@ -3559,6 +3583,28 @@ packages:
   pify@3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+
+  pinia-plugin-persist-uni@1.3.1:
+    resolution: {integrity: sha512-E7HEj6Hy3ZZKXCDG7yKWQ7Dg99Ibtei2qssY6w8wlqVBl3X54xSydiju8kO7IYPHw8heYAPjPBAF8TGCTdvRGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0
+      pinia: ^2.0.0
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
+  pinia@2.1.7:
+    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
 
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
@@ -4302,6 +4348,28 @@ packages:
       sugarss:
         optional: true
       terser:
+        optional: true
+
+  vue-demi@0.12.5:
+    resolution: {integrity: sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
+  vue-demi@0.14.8:
+    resolution: {integrity: sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
         optional: true
 
   vue-i18n@9.13.1:
@@ -5417,6 +5485,8 @@ snapshots:
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
       chalk: 5.3.0
+
+  '@dcloudio/types@2.6.12': {}
 
   '@dcloudio/types@3.4.8': {}
 
@@ -6679,6 +6749,8 @@ snapshots:
   '@types/istanbul-reports@3.0.4':
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
+
+  '@types/lodash@4.17.6': {}
 
   '@types/minimist@1.2.5': {}
 
@@ -8779,6 +8851,10 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
+  luch-request@3.1.1:
+    dependencies:
+      '@dcloudio/types': 2.6.12
+
   magic-string@0.30.10:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -9091,6 +9167,20 @@ snapshots:
   pify@2.3.0: {}
 
   pify@3.0.0: {}
+
+  pinia-plugin-persist-uni@1.3.1(pinia@2.1.7(typescript@4.9.5)(vue@3.4.31(typescript@4.9.5)))(vue@3.4.31(typescript@4.9.5)):
+    dependencies:
+      pinia: 2.1.7(typescript@4.9.5)(vue@3.4.31(typescript@4.9.5))
+      vue: 3.4.31(typescript@4.9.5)
+      vue-demi: 0.12.5(vue@3.4.31(typescript@4.9.5))
+
+  pinia@2.1.7(typescript@4.9.5)(vue@3.4.31(typescript@4.9.5)):
+    dependencies:
+      '@vue/devtools-api': 6.6.3
+      vue: 3.4.31(typescript@4.9.5)
+      vue-demi: 0.14.8(vue@3.4.31(typescript@4.9.5))
+    optionalDependencies:
+      typescript: 4.9.5
 
   pirates@4.0.6: {}
 
@@ -9817,6 +9907,14 @@ snapshots:
       '@types/node': 20.14.9
       fsevents: 2.3.3
       terser: 5.31.1
+
+  vue-demi@0.12.5(vue@3.4.31(typescript@4.9.5)):
+    dependencies:
+      vue: 3.4.31(typescript@4.9.5)
+
+  vue-demi@0.14.8(vue@3.4.31(typescript@4.9.5)):
+    dependencies:
+      vue: 3.4.31(typescript@4.9.5)
 
   vue-i18n@9.13.1(vue@3.4.31(typescript@4.9.5)):
     dependencies:
