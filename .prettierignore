@@ -6,4 +6,4 @@
 *.yaml
 *.md
 *.json
-bin
+dist
